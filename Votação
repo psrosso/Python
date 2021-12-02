@@ -1,0 +1,23 @@
+segunda = int(input("Qual a quantidade de votos em 'Segunda-feira'?"))
+terca = int(input("Qual a quantidade de votos em 'Terça-feira'?"))
+quarta = int(input("Qual a quantidade de votos em 'Quarta-feira'?"))
+quinta = int(input("Qual a quantidade de votos em 'Quinta-feira'?"))
+sexta = int(input("Qual a quantidade de votos em 'Sexta-feira'?"))
+
+if segunda > terca and segunda > quarta and segunda > quinta and segunda > sexta:
+    print("Segunda-feira foi o dia escolhido")
+    
+elif terca > segunda and terca > quarta and terca > quinta and terca > sexta:
+    print('Terça-feira foi o dia escolhido')
+    
+elif quarta > segunda and quarta > terca and quarta > quinta and  quarta > sexta:
+    print('Quarta-feira foi o dia escolhido')
+    
+ elif quinta > segunda and quinta > terca and quinta > quarta and quinta > sexta:
+    print('Quinta-feira foi o dia escolhido')
+    
+elif sexta > segunda and sexta > terca and sexta > quarta and sexta > quinta:
+    print('Sexta-feira foi o dia escolhido')
+    
+else:
+    print("Houve empate. Preencha novamente")
