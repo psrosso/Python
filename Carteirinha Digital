@@ -1,0 +1,16 @@
+print('''Seja bem vindo(a) à Carteirinha Digital
+Aqui seu filho vai aprender a controlar seus primeiros gastos ^.^
+''')
+
+transacao = input("Insira quantas transações você realizou hoje: ")
+transacaoQnt = int(transacao)
+
+total = 0
+
+for x in range(transacaoQnt):
+    num = int(input("Insira o valor de cada transação: "))
+    total = int(total + num)
+    media = total / transacaoQnt
+
+print('''O valor total de suas transações foi de R$: {}
+ E a média foi de R$: {}'''.format(total, media))
