@@ -1,0 +1,15 @@
+print("Seja bem vindo(a)! Para um melhor controle alimentar, insira as informações abaixo:")
+
+alimentos = input("Insira quantos alimentos foram consumidos: ")
+alimentosQnt = int(alimentos)
+
+soma = 0
+i = 0
+
+while i < alimentosQnt:
+    calorias = input("Insira a quantidade de calorias de cada um dos alimentos: ")
+    valor = int(calorias)
+    soma = soma + valor
+    i = i + 1
+
+print("Você consumiu o total de {} calorias".format(soma))
